@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "kaushanscript-regular";
+    src: url('../fonts/kaushanscript-regular-webfont.woff2'),
+         url('../fonts/kaushanscript-regular-webfont.woff'),
+         url('../fonts/KaushanScript-Regular.ttf');
+    font-display: swap;     
+}
+@font-face {
+    font-family: "montserrat-bold";
+    src: url('../fonts/montserrat-bold-webfont.woff2'),
+         url('../fonts/montserrat-bold-webfont.woff'),
+         url('../fonts/montserrat-bold-webfont.ttf');
+    font-display: swap;     
+}
+@font-face {
+    font-family: "roboto-lightitalic";
+    src: url('../fonts/roboto-lightitalic-webfont.woff2'),
+         url('../fonts/roboto-lightitalic-webfont.woff'),
+         url('../fonts/Roboto-LightItalic.ttf');
+     font-display: swap;    
+}
+@font-face {
+    font-family: "montserrat-regular";
+    src: url('../fonts/montserrat-regular-webfont.woff2'),
+         url('../fonts/montserrat-regular-webfont.woff'),
+         url('../fonts/montserrat-regular-webfont.ttf');
+    font-display: swap;     
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
