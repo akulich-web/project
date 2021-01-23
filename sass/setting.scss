@@ -26,12 +26,49 @@
          url('../fonts/montserrat-regular-webfont.ttf');
     font-display: swap;     
 }
-
+@font-face {
+    font-family: "roboto-regular";
+    src: url('../fonts/roboto-regular-webfont.woff2'),
+         url('../fonts/roboto-regular-webfont.woff'),
+         url('../fonts/Roboto-Regular.ttf');
+    font-display: swap;
+}
 .wrapper {
     margin-left: auto;
     margin-right: auto;
-    max-width: 850px;
-    padding-right: 15px;
+    max-width: 1250px;
+    padding-right: 12px;
     padding-left: 15px;
     box-sizing: border-box;
 }
+.section-title-block2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-title-block2 {
+h4 {
+     text-align: center;
+     font-family: "kaushanscript-regular", sans-serif;
+     font-size: 24px;
+ }
+h3 {
+     font-family: "montserrat-bold", sans-serif;
+     font-size: 30px;
+     text-transform: uppercase;
+     text-align: center;
+     margin-top: 15px;
+ }
+ span {
+    width: 62px;
+    height: 2px;
+    background-color: red;
+    margin-top: 15px;
+ }
+ p {
+     font-family: "roboto-regular", sans-serif;
+     font-size: 15px;
+     text-align: center;
+     margin-top: 50px;
+ }
+ }
