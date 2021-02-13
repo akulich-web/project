@@ -1,7 +1,7 @@
 var backButton = document.querySelector('.arrow-left');
 var nextButton = document.querySelector('.arrow-right');
 
-$('.slider').slick({
+$('.slick-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
@@ -19,3 +19,26 @@ $('.slider').slick({
         }
     ]      
 }); 
+
+const elements = document.querySelectorAll('.element');
+
+elements.forEach(element =>{
+    let btn = element.querySelector('.question button');
+    let icon = element.querySelector('.question button i');
+    var answer = element.lastElementChild;
+    var answers = document.querySelectorAll('.element .answer');
+
+    btn.addEventListener('click', ()=>{
+        answers.forEach(ans =>{
+            let ansIcon = ans.parentElement.querySelector('button i');
+            if(answer !== ans){
+                ans.classList.add('hideText');
+                ansIcon.className = 'fas fa-chevron-down';
+            }
+        });
+
+        answer.classList.toggle('hideText');
+        icon.className === 'fas fa-chevron-down' ? icon.className = 'fas fa-chevron-up' 
+        : icon.className ='fas fa-chevron-down';
+    });
+});
