@@ -18,7 +18,32 @@ $('.slick-slider').slick({
             }
         }
     ]      
-}); 
+});
+
+var backButton = document.querySelector('.arrow-left2');
+var nextButton = document.querySelector('.arrow-right2');
+$('.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    prevArrow: backButton,
+    nextArrow: nextButton,
+    responsive: [
+        {
+            breakpoint: 768,
+                settings: {
+                arrows: false,
+                dots: true,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+    ]      
+});
+
+
+
+
 
 const elements = document.querySelectorAll('.element');
 
