@@ -23,6 +23,13 @@
   src: url("../fonts/roboto-regular-webfont.woff2"), url("../fonts/roboto-regular-webfont.woff"), url("../fonts/Roboto-Regular.ttf");
   font-display: swap;
 }
+body {
+  overflow-x: hidden;
+  font-family: "roboto-regular", sans-serif;
+  font-size: 15px;
+  color: #999999;
+}
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -41,6 +48,8 @@
 .section-title-block2 h4 {
   font-family: "kaushanscript-regular", sans-serif;
   font-size: 24px;
+  color: #000000;
+  margin-bottom: 15px;
 }
 .section-title-block2 h3 {
   position: relative;
@@ -48,7 +57,8 @@
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: -15px;
+  margin-top: 1px;
+  color: #000000;
 }
 .section-title-block2 h3:after {
   content: "";
@@ -57,6 +67,7 @@
   height: 3px;
   background-color: #ff0000;
   margin-top: 40px;
+  opacity: 0.4;
   position: absolute;
   right: 50%;
   transform: translateX(50%);
@@ -66,7 +77,6 @@
   font-size: 15px;
   text-align: center;
   margin-top: 50px;
-  opacity: 0.4;
   max-width: 950px;
 }
 
@@ -435,12 +445,9 @@ template {
   text-decoration: none;
 }
 
-.nav-img {
-  display: flex;
-}
-
 .nav ul {
   display: flex;
+  padding-left: 375px;
 }
 .nav li {
   margin-left: 47px;
@@ -453,19 +460,20 @@ template {
   text-transform: uppercase;
   text-decoration: none;
 }
-.nav .button-mini {
+
+.button-mini {
   background: none;
   border: none;
 }
-.nav .basket {
+
+.basket {
+  width: 25px;
+  height: 25px;
+}
+
+.search-img {
   width: 25px;
   height: 20px;
-  margin-left: 30px;
-}
-.nav .search-img {
-  width: 20px;
-  height: 15px;
-  margin-left: 30px;
 }
 
 .header a:hover {
@@ -473,6 +481,12 @@ template {
   border-bottom: 3px solid #fce38a;
   padding-bottom: 5px;
   text-decoration: none;
+}
+
+.button-mini:hover {
+  color: #fce38a;
+  border-bottom: 3px solid #fce38a;
+  padding-bottom: 5px;
 }
 
 /*wr-about*/
@@ -499,7 +513,7 @@ template {
   color: #fff;
   text-align: center;
   max-width: 924px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .section-title-block h1:after {
   content: "";
@@ -507,7 +521,7 @@ template {
   width: 62px;
   height: 2px;
   background-color: #fff;
-  margin-top: 10px;
+  margin-top: 30px;
   position: absolute;
   right: 50%;
   transform: translateX(50%);
@@ -525,14 +539,13 @@ template {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  margin-top: -40px;
   text-decoration: none;
 }
 
 .slider-link {
   display: flex;
   justify-content: space-around;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .slider-link a {
@@ -546,7 +559,7 @@ template {
   font-size: 18px;
   text-transform: uppercase;
   border-top: 2px solid #fff;
-  width: 280px;
+  width: 22%;
   padding-top: 20px;
   position: relative;
 }
@@ -577,31 +590,22 @@ template {
 .gradient {
   position: relative;
   margin-top: 80px;
-  width: 380px;
+  width: 31%;
   height: 250px;
+  transition: 4s;
 }
 
 .image {
-  width: 380px;
+  width: 100%;
   height: 250px;
-}
-
-.text-image {
-  font-family: "montserrat-bold", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.icon-people {
-  width: 50px;
-  height: 50px;
 }
 
 .gradient:hover {
   top: -10px;
   left: -10px;
   opacity: 1;
+  transition: 0.5s;
+  transform: translateY(-25px);
 }
 
 .gradient:hover::after {
@@ -626,6 +630,18 @@ template {
   left: 0;
   background-image: linear-gradient(180deg, rgba(243, 129, 129, 0.9) 0%, rgba(252, 227, 138, 0.9) 100%);
   z-index: 1;
+}
+
+.text-image {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.icon-people {
+  width: 50px;
+  height: 50px;
 }
 
 .gradient:hover .text-image {
@@ -661,7 +677,6 @@ template {
 
 .item:first-child {
   border-left: 1px solid #fff;
-  width: 20%;
 }
 
 .number {
@@ -694,24 +709,24 @@ template {
   margin-top: 66px;
 }
 
-.container2 .left {
-  position: relative;
-  right: 60px;
-  top: 50px;
+.container2 .icon-work {
+  float: left;
+  margin: 20px;
 }
 .container2 h3 {
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
+  color: #000000;
 }
 .container2 p {
-  max-width: 280px;
+  max-width: 365px;
 }
 
 .line {
   width: 100%;
   height: 1px;
-  background-color: grey;
+  background-color: #DCDCDC;
   margin-top: 54px;
 }
 
@@ -723,18 +738,22 @@ template {
   padding-top: 70px;
 }
 
-.section-title-block2 img {
-  width: 450px;
+.device-phone {
+  text-align: center;
+  padding-left: 120px;
+}
+
+.device-phone img {
+  width: 45%;
   height: 600px;
   margin-top: 61px;
-  position: relative;
 }
-.section-title-block2 .phone img {
-  width: 260px;
+.device-phone .phone {
+  width: 23%;
   height: 420px;
-  position: absolute;
-  margin-top: -325px;
-  margin-left: 103px;
+  position: relative;
+  right: 100px;
+  top: 92px;
 }
 
 /*wr-service*/
@@ -744,14 +763,14 @@ template {
   padding-left: 30px;
 }
 
-.block {
+.container-service {
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
 }
 
-.block img {
-  width: 570px;
+.container-service img {
+  width: 47%;
   height: 380px;
 }
 
@@ -762,7 +781,7 @@ template {
 }
 
 .element {
-  width: 600px;
+  max-width: 600px;
   border: 1px solid #e5e5e5;
   padding: 10px;
   margin: 10px 0;
@@ -787,11 +806,8 @@ template {
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  margin-left: -370px;
-}
-.question p {
-  font-family: "roboto-lightitalic", sans-serif;
-  font-size: 15px;
+  color: #000000;
+  margin-right: 330px;
 }
 .question button {
   border: none;
@@ -838,26 +854,28 @@ template {
   background-color: #F8F8F8;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 240px;
+}
+
+.slider-container {
+  padding-left: 85px;
 }
 
 .slick1 img {
   border: 3px solid #95e1d3;
-  padding: 25px;
-  width: 100px;
-  height: 100px;
+  padding: 30px;
+  width: 10%;
   float: left;
-  margin-right: 80px;
+  margin-right: 70px;
 }
 .slick1 p {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 24px;
-  opacity: 0.4;
   max-width: 1000px;
 }
 .slick1 h4 {
   font-family: "kaushanscript-regular", sans-serif;
   font-size: 24px;
+  color: #000000;
   position: relative;
   left: 65%;
   transform: translateX(50%);
@@ -886,17 +904,17 @@ template {
 }
 
 .arrow-left img {
-  left: -65px;
+  left: 0;
 }
 
 .arrow-right img {
-  right: 105px;
+  right: 0;
 }
 
 /*wr-team*/
 .wr-team {
   padding-top: 100px;
-  padding-bottom: 125px;
+  padding-bottom: 140px;
 }
 
 .container-team2 {
@@ -906,28 +924,36 @@ template {
 
 .block-team {
   position: relative;
-  width: 377px;
+  width: 100%;
   height: 470px;
   margin-top: 60px;
+}
+
+.developer {
+  width: 100%;
+  height: 470px;
 }
 
 .text-team h3 {
   text-align: center;
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
+  color: #333333;
   text-transform: uppercase;
+  margin-top: -30px;
 }
 .text-team h4 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
   text-align: center;
-  opacity: 0.4;
 }
 
 .block-team:hover {
   top: -10px;
   left: -10px;
   opacity: 1;
+  transition: 0.5s;
+  transform: translateY(-25px);
 }
 
 .block-team:hover::after {
@@ -954,6 +980,10 @@ template {
   z-index: 1;
 }
 
+.icon-teams {
+  display: flex;
+}
+
 .icon-team {
   width: 30px;
   height: 30px;
@@ -967,20 +997,20 @@ template {
   border-left: 1px solid #f38181;
 }
 
-.icon-team:first-child {
-  border-left: none;
+.icon-team:last-child {
+  border-right: 1px solid #f38181;
 }
 
 .block-team:hover .icon-team {
-  top: -50%;
-  left: 20%;
+  top: -250px;
+  left: 70px;
   opacity: 1;
   z-index: 1;
 }
 
 .icon-team:hover {
-  color: #fff;
-  background-color: #f38181;
+  background-color: #ffffff;
+  fill: #fff;
 }
 
 /*wr-sign*/
@@ -996,9 +1026,8 @@ template {
   justify-content: space-between;
 }
 
-.signs img {
-  width: 150px;
-  height: 150px;
+.sing {
+  width: 100%;
 }
 
 /*wr-some-work*/
@@ -1117,6 +1146,10 @@ template {
   overflow: hidden;
 }
 
+.slider-container-img {
+  padding-left: 85px;
+}
+
 .slick2 img {
   padding-right: 40px;
   padding-top: -50px;
@@ -1125,13 +1158,13 @@ template {
 .slick2 p {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 24px;
-  opacity: 0.4;
   padding-top: 40px;
   max-width: 1000px;
 }
 .slick2 h4 {
   font-family: "kaushanscript-regular", sans-serif;
   font-size: 24px;
+  color: #333333;
   position: relative;
   left: 70px;
 }
@@ -1155,14 +1188,14 @@ template {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   color: #e5e5e5;
 }
 .slider-container-img .arrow-left2 {
-  left: -10px;
+  left: 0;
 }
 .slider-container-img .arrow-right2 {
-  right: 125px;
+  right: 0;
 }
 
 /*wr-clients*/
@@ -1189,12 +1222,12 @@ template {
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  opacity: 0.5;
+  color: #333333;
 }
 .container-people h4 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
-  opacity: 0.5;
+  color: #333333;
   position: relative;
   top: -10px;
 }
@@ -1204,15 +1237,13 @@ template {
   width: 62px;
   height: 3px;
   background-color: #ff0000;
+  opacity: 0.4;
   position: absolute;
   top: 35px;
   left: 140px;
 }
 .container-people p {
-  font-family: "roboto-regular", sans-serif;
-  font-size: 15px;
   max-width: 450px;
-  opacity: 0.4;
   margin-left: 70px;
   margin-top: 25px;
 }
@@ -1233,8 +1264,11 @@ template {
   position: relative;
 }
 
+.blog img {
+  width: 100%;
+}
 .blog h3 {
-  width: 60px;
+  width: 15%;
   height: 60px;
   background-color: #95e1d3;
   padding-top: 10px;
@@ -1256,17 +1290,14 @@ template {
 .blog h4 {
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
+  color: #333333;
   text-transform: uppercase;
-  opacity: 0.7;
 }
 .blog p {
-  font-family: "roboto-regular", sans-serif;
-  font-family: 15px;
   max-width: 370px;
-  opacity: 0.5;
 }
 .blog .lines {
-  width: 380px;
+  width: 100%;
   height: 1px;
   background-color: #808080;
   opacity: 0.5;
@@ -1284,7 +1315,7 @@ template {
 .blog h5 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
-  opacity: 0.5;
+  color: #999999;
   position: absolute;
   top: -25px;
   left: 35px;
@@ -1350,33 +1381,29 @@ template {
   opacity: 0.3;
 }
 .mogo p {
-  font-family: "roboto-regular", sans-serif;
-  font-size: 15px;
   max-width: 460px;
   line-height: 1.5;
-  opacity: 0.5;
 }
 .mogo h3 {
   font-weight: lighter;
   margin-top: 30px;
-  opacity: 0.7;
   font-size: 15px;
 }
 .mogo span {
   font-family: "montserrat-bold", sans-serif;
   font-size: 20px;
   font-weight: bold;
+  color: #333333;
   padding: 5px;
 }
 .mogo .lines {
-  width: 485px;
+  width: 100%;
   height: 1px;
   background-color: #DCDCDC;
 }
 .mogo h4 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
-  opacity: 0.5;
 }
 
 .follow {
@@ -1422,14 +1449,15 @@ input::placeholder {
   text-transform: uppercase;
   padding-top: 40px;
   font-weight: lighter;
+  color: #333333;
 }
 .blogs img {
+  width: 35%;
   float: left;
   margin-right: 20px;
   padding-top: 25px;
 }
 .blogs p {
-  font-family: "montserrat-regular", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   max-width: 350px;
@@ -1440,7 +1468,6 @@ input::placeholder {
 .blogs h3 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 13px;
-  opacity: 0.2;
 }
 
 .blogs-img {
@@ -1454,8 +1481,7 @@ input::placeholder {
 }
 
 .view img {
-  width: 87px;
-  height: 87px;
+  width: 28%;
   padding: 1px;
 }
 
@@ -1468,6 +1494,7 @@ input::placeholder {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: lighter;
+  color: #333333;
 }
 .instagram .view-img {
   background: none;
@@ -1498,6 +1525,32 @@ input::placeholder {
 .copy a {
   text-decoration: none;
   color: #f38181;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    display: block;
+  }
+
+  .header nav .logo {
+    float: left;
+    clear: left;
+    margin: 0 0 10px;
+    width: 100%;
+  }
+
+  .header nav li {
+    margin: 0;
+    background: #ccc;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  .header nav a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -33,6 +33,13 @@
          url('../fonts/Roboto-Regular.ttf');
     font-display: swap;
 }
+
+body {
+    overflow-x: hidden;
+    font-family: "roboto-regular", sans-serif;
+    font-size: 15px;
+    color: #999999;
+}
 .wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -50,6 +57,8 @@
 h4 {
      font-family: "kaushanscript-regular", sans-serif;
      font-size: 24px;
+     color: #000000;
+     margin-bottom: 15px;
  }
 h3 {
     position: relative;
@@ -57,9 +66,9 @@ h3 {
      font-size: 30px;
      text-transform: uppercase;
      text-align: center;
-     margin-top: -15px;
-  
- }
+     margin-top: 1px;
+     color: #000000;
+}
 h3:after {
     content: "";
     display: block;
@@ -67,6 +76,7 @@ h3:after {
     height: 3px;
     background-color: #ff0000;
     margin-top: 40px;
+    opacity: 0.4;
     position: absolute;
     right: 50%;
     transform: translateX(50%);
@@ -76,7 +86,6 @@ h3:after {
      font-size: 15px;
      text-align: center;
      margin-top: 50px;
-     opacity: 0.4;
      max-width: 950px;
  }
  }
