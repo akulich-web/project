@@ -43,6 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .section-title-block2 h4 {
@@ -447,7 +448,7 @@ template {
 
 .nav ul {
   display: flex;
-  padding-left: 375px;
+  padding-left: 420px;
 }
 .nav li {
   margin-left: 47px;
@@ -466,14 +467,20 @@ template {
   border: none;
 }
 
-.basket {
-  width: 25px;
-  height: 25px;
+.fa-search {
+  color: #fff;
 }
 
-.search-img {
-  width: 25px;
-  height: 20px;
+.fa-search:hover {
+  color: #fce38a;
+}
+
+.fa-cart-arrow-down {
+  color: #fff;
+}
+
+.fa-cart-arrow-down:hover {
+  color: #fce38a;
 }
 
 .header a:hover {
@@ -481,12 +488,6 @@ template {
   border-bottom: 3px solid #fce38a;
   padding-bottom: 5px;
   text-decoration: none;
-}
-
-.button-mini:hover {
-  color: #fce38a;
-  border-bottom: 3px solid #fce38a;
-  padding-bottom: 5px;
 }
 
 /*wr-about*/
@@ -590,7 +591,6 @@ template {
 
 .gradient {
   position: relative;
-  margin-top: 80px;
   width: 31%;
   height: 250px;
   transition: 4s;
@@ -605,8 +605,6 @@ template {
   top: -10px;
   left: -10px;
   opacity: 1;
-  transition: 0.5s;
-  transform: translateY(-25px);
 }
 
 .gradient:hover::after {
@@ -619,6 +617,7 @@ template {
   left: 10px;
   background-color: #95e1d3;
   z-index: -1;
+  transition: 0.5s;
 }
 
 .gradient:hover:before {
@@ -707,22 +706,31 @@ template {
 .container2 {
   display: flex;
   justify-content: space-around;
-  margin-top: 66px;
+  margin-top: 60px;
 }
 
 .container2 .icon-work {
-  float: left;
-  margin: 20px;
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
 }
-.container2 h3 {
+
+.icon {
+  display: flex;
+}
+
+.text-icon {
+  margin-left: 20px;
+}
+
+.text-icon h3 {
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  color: #000000;
-  margin-top: 30px;
+  color: #000;
 }
-.container2 p {
-  max-width: 365px;
+.text-icon p {
+  max-width: 280px;
 }
 
 .line {
@@ -801,7 +809,7 @@ template {
 }
 
 .question img {
-  width: 10%;
+  width: 70px;
   height: 50px;
 }
 .question h3 {
@@ -866,12 +874,12 @@ template {
   padding: 30px;
   width: 10%;
   float: left;
-  margin-right: 70px;
+  margin-right: 50px;
 }
 .slick1 p {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 24px;
-  width: 95%;
+  max-width: 1000px;
   white-space: pre-line;
 }
 .slick1 span {
@@ -928,7 +936,6 @@ template {
   position: relative;
   width: 100%;
   height: 470px;
-  margin-top: 60px;
 }
 
 .developer {
@@ -987,14 +994,12 @@ template {
 }
 
 .icon-team {
-  width: 30px;
-  height: 30px;
   position: relative;
   top: 0;
   left: 0;
   opacity: 0;
   background-color: #fce38a;
-  padding: 10px;
+  padding: 9px;
   margin: -2px;
   border-left: 1px solid #f38181;
 }
@@ -1004,15 +1009,51 @@ template {
 }
 
 .block-team:hover .icon-team {
+  width: 30px;
+  height: 30px;
+  position: relative;
   top: -250px;
-  left: 70px;
+  left: 100px;
   opacity: 1;
   z-index: 1;
 }
 
 .icon-team:hover {
-  background-color: #ffffff;
-  fill: #fff;
+  background-color: #f38181;
+  transition: 0.9s;
+}
+
+.fa-facebook-f {
+  color: #f38181;
+  margin-left: 3px;
+}
+
+.fa-facebook-f:hover {
+  color: #fff;
+}
+
+.fa-dove {
+  color: #f38181;
+}
+
+.fa-dove:hover {
+  color: #fff;
+}
+
+.fa-pinterest-p {
+  color: #f38181;
+}
+
+.fa-pinterest-p:hover {
+  color: #fff;
+}
+
+.fa-camera-retro {
+  color: #f38181;
+}
+
+.fa-camera-retro:hover {
+  color: #fff;
 }
 
 /*wr-sign*/
@@ -1042,7 +1083,6 @@ template {
   display: grid;
   grid-template-rows: repeat(2, 397px);
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 100px;
   position: relative;
 }
 
@@ -1129,14 +1169,14 @@ template {
 
 .pictures:hover .text-gallery {
   position: relative;
-  top: -70%;
+  bottom: 60%;
   z-index: 1;
   opacity: 1;
 }
 
 .pictures-ocean:hover .text-gallery {
   position: relative;
-  top: -55%;
+  bottom: 50%;
   z-index: 1;
   opacity: 1;
 }
@@ -1168,7 +1208,7 @@ template {
 .slick2 span {
   font-family: "kaushanscript-regular", sans-serif;
   font-size: 24px;
-  color: #333333;
+  color: #333;
   position: relative;
   left: 80px;
   top: 15px;
@@ -1218,25 +1258,33 @@ template {
   margin-top: 110px;
 }
 
-.clients img {
-  float: left;
-  margin: 5px;
+.clients {
+  display: flex;
 }
 
-.container-people h3 {
+.clients img {
+  width: 30%;
+  height: 160px;
+}
+
+.clients-text {
+  margin-left: 30px;
+}
+
+.clients-text h3 {
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   color: #333333;
 }
-.container-people h4 {
+.clients-text h4 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
   color: #333333;
   position: relative;
   top: -10px;
 }
-.container-people h4::after {
+.clients-text h4::after {
   content: "";
   display: block;
   width: 62px;
@@ -1245,12 +1293,9 @@ template {
   opacity: 0.4;
   position: absolute;
   top: 35px;
-  left: 140px;
 }
-.container-people p {
-  max-width: 450px;
-  margin-left: 70px;
-  margin-top: 25px;
+.clients-text p {
+  max-width: 390px;
 }
 
 /*wr-latest*/
@@ -1301,36 +1346,32 @@ template {
 .blog p {
   max-width: 370px;
 }
-.blog .lines {
-  width: 100%;
-  height: 1px;
-  background-color: #808080;
+
+.buttons {
+  display: flex;
+  border-top: 1px solid #808080;
   opacity: 0.5;
 }
-.blog .icons {
-  width: 20px;
-  height: 20px;
+
+.buttons .fa-eye {
+  color: #95e1d3;
 }
-.blog .eye {
+.buttons .fa-comment-dots {
+  color: #95e1d3;
+  margin-left: 15px;
+}
+.buttons .eye {
   background: none;
   border: none;
-  margin-top: 15px;
-  position: relative;
 }
-.blog h5 {
+.buttons h5 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
-  color: #999999;
-  position: absolute;
-  top: -25px;
-  left: 35px;
+  color: #999;
 }
-.blog .comment {
+.buttons .comment {
   background: none;
   border: none;
-  position: absolute;
-  left: 80px;
-  bottom: 1px;
 }
 
 /*wr-map*/
@@ -1375,7 +1416,7 @@ template {
   padding-bottom: 20px;
 }
 
-.wr-mogo {
+.container-mogo {
   display: flex;
   justify-content: space-between;
 }
@@ -1384,6 +1425,7 @@ template {
   font-family: "montserrat-bold", sans-serif;
   font-size: 46px;
   opacity: 0.3;
+  margin-top: 35px;
 }
 .mogo p {
   max-width: 460px;
@@ -1413,20 +1455,19 @@ template {
 
 .follow {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .follow img {
   width: 20px;
   height: 20px;
-  margin-left: 20px;
-  margin-top: 20px;
 }
 
 input {
   width: 240px;
   height: 40px;
   border-color: #F8F8F8;
-  opacity: 0.4;
   margin-top: 20px;
 }
 
@@ -1454,29 +1495,29 @@ input::placeholder {
   text-transform: uppercase;
   padding-top: 40px;
   font-weight: lighter;
-  color: #333333;
-}
-.blogs img {
-  width: 35%;
-  float: left;
-  margin-right: 20px;
-  padding-top: 25px;
-}
-.blogs p {
-  font-size: 12px;
-  text-transform: uppercase;
-  max-width: 350px;
-  font-weight: lighter;
-  line-height: 1.5;
-  padding-top: 30px;
-}
-.blogs h3 {
-  font-family: "roboto-lightitalic", sans-serif;
-  font-size: 13px;
+  color: #333;
 }
 
 .blogs-img {
-  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.blogs-img img {
+  width: 35%;
+  height: 80px;
+}
+
+.blogs-text p {
+  font-size: 12px;
+  text-transform: uppercase;
+  max-width: 180px;
+  line-height: 1.5;
+}
+.blogs-text h3 {
+  font-family: "roboto-lightitalic", sans-serif;
+  font-size: 13px;
 }
 
 .view {
@@ -1486,7 +1527,8 @@ input::placeholder {
 }
 
 .view img {
-  width: 28%;
+  width: 30%;
+  height: 90px;
   padding: 1px;
 }
 
@@ -1510,7 +1552,7 @@ input::placeholder {
 }
 
 .view {
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
 .line-last {
@@ -1520,14 +1562,14 @@ input::placeholder {
   margin-top: 70px;
 }
 
-.copy {
+.footer {
   text-align: center;
   margin-top: 20px;
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
 }
 
-.copy a {
+.footer a {
   text-decoration: none;
   color: #f38181;
 }
