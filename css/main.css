@@ -446,12 +446,6 @@ template {
   text-decoration: none;
 }
 
-.nav {
-  transition: 0.5s;
-  transform-origin: top bottom;
-  transform: scaleY(1);
-}
-
 .nav ul {
   display: flex;
   padding-left: 450px;
@@ -474,14 +468,11 @@ template {
 
 .toggleMenu {
   display: none;
+  color: #fff;
   padding: 15px 50px;
   cursor: pointer;
   position: relative;
   right: 50px;
-}
-
-.fa-bars {
-  color: #fff;
 }
 
 .button-mini {
@@ -514,7 +505,7 @@ template {
 
 /*wr-about*/
 .wr-about {
-  padding-top: 6vh;
+  padding-top: 10vh;
 }
 
 .section-title-block {
@@ -564,6 +555,7 @@ template {
   box-sizing: border-box;
   text-decoration: none;
   padding: 10px;
+  margin-top: 30px;
 }
 
 #slider1 {
@@ -621,6 +613,7 @@ template {
 .slider-link {
   display: flex;
   justify-content: space-around;
+  margin-top: 90px;
 }
 
 .slider-link a {
@@ -941,21 +934,19 @@ template {
   padding-left: 85px;
 }
 
-.container-slider {
-  display: flex;
-  flex-direction: row;
-}
-
 .slick1 img {
   border: 3px solid #95e1d3;
   padding: 30px;
   width: 10%;
+  float: left;
+  margin: 30px;
 }
 .slick1 p {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 24px;
   max-width: 1000px;
   white-space: pre-line;
+  margin-top: 50px;
 }
 .slick1 span {
   font-family: "kaushanscript-regular", sans-serif;
@@ -1538,28 +1529,33 @@ template {
 }
 
 input {
+  border: none;
   width: 240px;
   height: 40px;
   border-color: #F8F8F8;
   margin-top: 20px;
 }
 
+input[type] {
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
 .contacts-button {
   width: 150px;
-  height: 45px;
+  height: 43px;
   background-color: #95e1d3;
   border: none;
-  margin-left: -5px;
+  margin-left: -3px;
   font-family: "montserrat-bold", sans-serif;
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
 input::placeholder {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
-  padding-left: 20px;
 }
 
 .blogs h2 {
@@ -1719,6 +1715,7 @@ input::placeholder {
 
   .container-colum {
     margin-top: 0;
+    margin-left: 0;
     padding-left: 35px;
   }
 
@@ -1826,9 +1823,30 @@ input::placeholder {
     padding-left: 175px;
   }
 }
-@media only screen and (max-width: 769px) and (min-width: 375px) {
+@media screen and (max-width: 800px) and (min-width: 360px) {
   .button-mini {
     margin-left: 0;
+  }
+
+  .nav ul {
+    display: none;
+    padding-left: 0;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .toggleMenu {
+    display: block;
+  }
+
+  .toggleMenu:checked {
+    color: #fce38a;
+  }
+
+  .toggleMenu:checked ~ ul {
+    display: block;
   }
 
   #slider1 {
@@ -1942,6 +1960,8 @@ input::placeholder {
 
   .container-colum {
     padding-left: 0;
+    margin-top: 0;
+    margin-left: 0;
   }
 
   .question {
@@ -2009,6 +2029,45 @@ input::placeholder {
 
   .container-people {
     display: inline;
+  }
+
+  .wr-slider-img {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .slick2 img {
+    width: 33%;
+    padding-top: 30px;
+    margin-left: 17px;
+    padding-right: 0;
+  }
+
+  .slick2 p {
+    font-size: 11px;
+  }
+
+  .slick2 span {
+    font-size: 13px;
+    left: 63px;
+    top: 1px;
+  }
+
+  .slider-arrow img {
+    width: 17px;
+    height: 20px;
+    left: -8px;
+  }
+
+  .slider-container-img .slider-arrow {
+    width: 0;
+  }
+
+  .slick2 span::before {
+    width: 44px;
+    height: 2px;
+    right: 81px;
+    top: 14px;
   }
 
   .container-latest {

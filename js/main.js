@@ -13,7 +13,7 @@ $('.slick-slider ').slick({
                 settings: {
                 arrows: false,
                 dots: true,
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         }
@@ -34,7 +34,7 @@ $('.slider').slick({
                 settings: {
                 arrows: false,
                 dots: true,
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         }
