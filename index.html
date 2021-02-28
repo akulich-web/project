@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="sass/normalize.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="http://baijs.com/tinycarousel/examples/simple/tinycarousel.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -14,8 +15,10 @@
         <header class="header">
             <div class="wrapper">
                 <a href="#" class="logo">MoGo</a>
-                    <nav class="nav">
-                    <ul>
+                <nav class="nav">
+                    <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+                    <label for="menu" class="toggleMenu"><i class="fas fa-bars fa-3x"></i></label>
+                    <ul class="nav-menu">
                         <li><a href="#">About</a></li>
                         <li><a href="#">Service</a></li>
                         <li><a href="#">Work</a></li>
@@ -27,22 +30,43 @@
         <button class="button-mini"><i class="fas fa-search fa-lg"></i>
         </button> 
                 </div> 
-            </div>
+            
         </header>
     <section class="wr-about">
         <div class="wrapper">
-            <div class="section-title-block">
+    <div id="slider1">
+        <div class="viewport">
+            <ul class="overview">
+            <li class="section-title-block">
                 <h2>Creative Template</h2>
                 <h1>Welcome to Mogo</h1>
                 <a href="#" class="btn">Learn more</a>
-           </div> 
-    <div class="slider-link">
-           <a href="#" class="link">01 intro</a>
-           <a href="#" class="link">02 work</a>
-           <a href="#" class="link">03 about</a>
-           <a href="#" class="link">04 contacts</a>
-            </div>
+            </li>
+        <li><img src="./media/icon/camera-solid.svg" alt="camera"><span>photography</span>
+        <img src="./media/icon/paint-brush-solid.svg" alt="paint"><span>designer</span>
+        <img src="./media/icon/angellist-brands (1).svg" alt="angellist"><span>creativity</span>
+        <img src="./media/icon/book-solid.svg" alt="book"><span>seo/copywriting</span>
+        <img src="./media/icon/css3-alt-brands.svg" alt="css"><span>css/html</span>
+                </li>
+        <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisit ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisit ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisit ut aliquip ex ea commodo consequat.
+            </p></li>
+        <li><img src="./media/icon/address-card-solid.svg" alt="address"><span>Minsk, Golubeva, 89</span>
+            <img src="./media/icon/phone-volume-solid.svg" alt="phones"><a href="tel:+375296789887">+375(29)678-98-87</a>  
+            <img src="./media/icon/at-solid.svg" alt="mail"><a href="mailto:Mogohelp@mail.com">Mogohelp@mail.com</a></li> 
+            </ul>
         </div>
+    </div>
+<div class="slider-link">
+    <a href="#" id="link1" class="link">01 intro</a>
+    <a href="#" id="link2" class="link">02 work</a>
+    <a href="#" id="link3" class="link">03 about</a>
+    <a href="#" id="link4" class="link">04 contacts</a>
+</div>
+
+        </div>
+        
     </section>
 </section>
     <section class="wr-story">
@@ -167,7 +191,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisit ut aliquip ex ea commodo consequat.</p>  
         </div>
 <div class="container-service">
-    <img src="./media/picture/wall.png" alt="wall">
+    <img class="work" src="./media/picture/wall.png" alt="wall">
 <div class="container-colum">
     <div class="element">
 <div class="question">
@@ -208,18 +232,22 @@
     <div class="wrapper">
         <div class="slider-container">    
             <div class="slick1 slick-slider">
-    <div class="container-icon">          
-        <img src="./media/icon/icon.png" alt="letter"> 
+    <div class="container-icon">
+    <div class="container-slider">         
+        <img src="./media/icon/icon.png" alt="letter">
+    </div>
+    <div class="togethe">
         <p>&#8243Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vtniam, quis nostrud exercitation.&#8243
         <span>Jon Doe</span></p>
-    
-   </div>
-   <div class="container-icon">          
+    </div>
+    </div>
+
+    <div class="container-icon">          
     <img src="./media/icon/icon.png" alt="letter">   
     <p>&#8243Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vtniam, quis nostrud exercitation.&#8243
     <span>Jon Doe</span></p>
     </div> 
-        </div>
+            </div> 
         
 <div class="arrow-left slider-arrow">
     <img src="./media/icon/chevron-left-solid.svg" alt="arrow1">
@@ -442,10 +470,12 @@
         </div>
 <div class="container-latest">
     <div class="blog">
+    <div class="blog-img">
         <img src="./media/picture/table.png" alt="table">
            <h3>15<span>Jan</span></h3>
+    </div>
             <h4>Lorem ipsum dolor sit amet</h4>
-            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
             <div class="buttons">
     <button class="eye"><i class="fas fa-eye fa-lg"></i>
         </button>
@@ -455,10 +485,12 @@
             </div>
         </div>
 <div class="blog">
+    <div class="blog-img">
         <img src="./media/picture/work.png" alt="work">
         <h3>14<span>Jan</span></h3>
+    </div>
             <h4>Sed do eiusmod tempor </h4>
-            <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     <div class="buttons">
         <button class="eye"><i class="fas fa-eye fa-lg"></i></button>
         <h5>992</h5>
@@ -467,8 +499,10 @@
             </div>
         </div>
 <div class="blog">
+    <div class="blog-img">
             <img src="./media/picture/man-work.png" alt="man-work">
             <h3>12<span>Jan</span></h3>
+    </div>
             <h4>incididunt ut labore et dolore</h4>
             <p>Elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua.</p>
     <div class="buttons">  
@@ -550,9 +584,8 @@
     </div>
 </div>
 </div>
-    <div class="line-last"></div>
     <footer class="footer">
-    &copy; 2016 MoGo free PSD template by <a href="#">Laaqiq</a>   
+    <span>&copy; 2016 MoGo free PSD template by <a href="#">Laaqiq</a></span>   
     </footer>     
         </div>
     </div>
@@ -562,6 +595,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+<script src="http://baijs.com/tinycarousel/examples/simple/jquery.tinycarousel.js"></script>
 <script src="./js/main.js"></script>   
 </body>
 </html>

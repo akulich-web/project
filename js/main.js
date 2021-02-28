@@ -1,7 +1,7 @@
 var backButton = document.querySelector('.arrow-left');
 var nextButton = document.querySelector('.arrow-right');
 
-$('.slick-slider').slick({
+$('.slick-slider ').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
@@ -67,3 +67,27 @@ elements.forEach(element =>{
         : icon.className ='fas fa-chevron-down';
     });
 });
+
+
+
+$(document).ready(function() {
+    $('#slider1').tinycarousel();
+    var slider = $("#slider1").data("plugin_tinycarousel");
+  
+    $('#link1').click(function(e) {
+      slider.move(0);
+      e.preventDefault();
+    });
+    $('#link2').click(function(e) {
+      slider.move(1);
+      e.preventDefault();
+    });
+    $('#link3').click(function(e) {
+      slider.move(2);
+      e.preventDefault();
+    });
+    $('#link4').click(function(e) {
+        slider.move(3);
+        e.preventDefault();
+      });
+  });

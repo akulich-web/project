@@ -446,9 +446,15 @@ template {
   text-decoration: none;
 }
 
+.nav {
+  transition: 0.5s;
+  transform-origin: top bottom;
+  transform: scaleY(1);
+}
+
 .nav ul {
   display: flex;
-  padding-left: 420px;
+  padding-left: 450px;
 }
 .nav li {
   margin-left: 47px;
@@ -460,6 +466,22 @@ template {
   font-family: "montserrat-regular", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.nav [type] {
+  display: none;
+}
+
+.toggleMenu {
+  display: none;
+  padding: 15px 50px;
+  cursor: pointer;
+  position: relative;
+  right: 50px;
+}
+
+.fa-bars {
+  color: #fff;
 }
 
 .button-mini {
@@ -492,7 +514,7 @@ template {
 
 /*wr-about*/
 .wr-about {
-  padding-top: 3vh;
+  padding-top: 6vh;
 }
 
 .section-title-block {
@@ -504,17 +526,17 @@ template {
 .section-title-block h2 {
   color: #fff;
   font-family: "kaushanscript-regular", sans-serif;
-  font-size: 72px;
+  font-size: 54px;
 }
 .section-title-block h1 {
   position: relative;
-  font-size: 135px;
+  font-size: 93px;
   text-transform: uppercase;
   font-family: "montserrat-bold", sans-serif;
   color: #fff;
   text-align: center;
-  max-width: 924px;
   margin-top: 5px;
+  padding-left: 26px;
 }
 .section-title-block h1:after {
   content: "";
@@ -541,13 +563,64 @@ template {
   justify-content: center;
   box-sizing: border-box;
   text-decoration: none;
+  padding: 10px;
+}
+
+#slider1 {
+  padding-left: 350px;
+}
+
+#slider1 .viewport {
+  width: 523px;
+  height: 504px;
+  text-align: center;
+}
+
+#slider1 .overview li {
+  height: 350px;
+  width: 500px;
+  border: medium none;
+}
+
+.overview {
+  list-style-type: none;
+}
+
+.overview p {
+  font-size: 20px;
+  color: #fff;
+  padding-top: 50px;
+  text-align: left;
+}
+.overview span {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.overview img {
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 225px;
+}
+.overview li {
+  display: flex;
+  flex-direction: column;
+}
+.overview a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
 }
 
 .slider-link {
   display: flex;
-  align-items: flex-end;
   justify-content: space-around;
-  padding: 70px;
 }
 
 .slider-link a {
@@ -555,7 +628,7 @@ template {
   color: #fff;
 }
 
-.link {
+.slider-link a {
   color: #fff;
   font-family: "montserrat-regular", sans-serif;
   font-size: 18px;
@@ -576,6 +649,7 @@ template {
 
 .link:hover {
   font-weight: bold;
+  color: #e34234;
 }
 
 /*wr-story*/
@@ -593,7 +667,6 @@ template {
   position: relative;
   width: 31%;
   height: 250px;
-  transition: 4s;
 }
 
 .image {
@@ -617,7 +690,6 @@ template {
   left: 10px;
   background-color: #95e1d3;
   z-index: -1;
-  transition: 0.5s;
 }
 
 .gradient:hover:before {
@@ -768,7 +840,7 @@ template {
 
 /*wr-service*/
 .wr-service {
-  padding-top: 115px;
+  padding-top: 30px;
   padding-bottom: 130px;
   padding-left: 30px;
 }
@@ -776,11 +848,10 @@ template {
 .container-service {
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
 }
 
 .container-service img {
-  width: 47%;
+  width: 100%;
   height: 380px;
 }
 
@@ -788,6 +859,7 @@ template {
   display: flex;
   flex-direction: column;
   margin-top: -10px;
+  margin-left: 15px;
 }
 
 .element {
@@ -869,12 +941,15 @@ template {
   padding-left: 85px;
 }
 
+.container-slider {
+  display: flex;
+  flex-direction: row;
+}
+
 .slick1 img {
   border: 3px solid #95e1d3;
   padding: 30px;
   width: 10%;
-  float: left;
-  margin-right: 50px;
 }
 .slick1 p {
   font-family: "roboto-lightitalic", sans-serif;
@@ -1307,10 +1382,9 @@ template {
 .container-latest {
   display: flex;
   justify-content: space-around;
-  margin-top: 46px;
 }
 
-.blog {
+.blog-img {
   position: relative;
 }
 
@@ -1327,7 +1401,7 @@ template {
   font-size: 30px;
   position: absolute;
   left: -10px;
-  top: 125px;
+  bottom: -10px;
 }
 .blog span {
   font-size: 13px;
@@ -1425,7 +1499,6 @@ template {
   font-family: "montserrat-bold", sans-serif;
   font-size: 46px;
   opacity: 0.3;
-  margin-top: 35px;
 }
 .mogo p {
   max-width: 460px;
@@ -1501,7 +1574,6 @@ input::placeholder {
 .blogs-img {
   display: flex;
   justify-content: space-between;
-  margin-top: 28px;
 }
 
 .blogs-img img {
@@ -1532,34 +1604,20 @@ input::placeholder {
   padding: 1px;
 }
 
-.instagram {
-  margin-top: 35px;
-}
-
 .instagram h2 {
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: lighter;
-  color: #333333;
+  color: #333;
+  margin-top: 50px;
 }
 .instagram .view-img {
   background: none;
   border: none;
-  margin-top: 20px;
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 13px;
-}
-
-.view {
-  margin-top: 40px;
-}
-
-.line-last {
-  width: 100%;
-  height: 1px;
-  background-color: #DCDCDC;
-  margin-top: 70px;
+  margin-top: 15px;
 }
 
 .footer {
@@ -1567,11 +1625,419 @@ input::placeholder {
   margin-top: 20px;
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
+  border-top: 1px solid #DCDCDC;
+  margin-top: 40px;
+  padding: 20px;
 }
 
 .footer a {
   text-decoration: none;
   color: #f38181;
+}
+
+.mobile_menu_click {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #slider1 {
+    padding-left: 100px;
+  }
+
+  .nav {
+    overflow: hidden;
+  }
+
+  .button-mini {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav ul {
+    display: none;
+    padding-left: 0;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .toggleMenu {
+    display: block;
+  }
+
+  .toggleMenu:checked {
+    color: #fce38a;
+  }
+
+  .toggleMenu:checked ~ ul {
+    display: block;
+  }
+
+  .slider-link a {
+    font-size: 15px;
+    margin-top: 50px;
+  }
+
+  .image {
+    height: 180px;
+  }
+
+  .gradient:hover {
+    height: 180px;
+  }
+
+  .gradient:hover .text-image {
+    top: 100px;
+    left: 43px;
+  }
+
+  .number {
+    text-align: center;
+  }
+
+  .device-phone img {
+    width: 60%;
+  }
+
+  .device-phone .phone {
+    width: 39%;
+  }
+
+  .wr-work {
+    padding: 0;
+  }
+
+  .wr-service {
+    padding-left: 0;
+  }
+
+  .container-service {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-colum {
+    margin-top: 0;
+    padding-left: 35px;
+  }
+
+  .developer {
+    width: 90%;
+    height: 275px;
+  }
+
+  .block-team {
+    height: 394px;
+  }
+
+  .block-team:hover::before {
+    width: 90%;
+    height: 70%;
+  }
+
+  .block-team:hover::after {
+    height: 70%;
+    width: 90%;
+  }
+
+  .block-team:hover .icon-team {
+    top: -155px;
+    left: 24px;
+  }
+
+  .clients img {
+    height: 120px;
+  }
+
+  .wr-slider-img {
+    padding-left: 0;
+  }
+
+  .slider-container-img {
+    padding-left: 0;
+  }
+
+  .nav li {
+    margin-top: 8px;
+    margin-left: 0;
+  }
+
+  .button-mini {
+    margin-left: -300px;
+  }
+
+  .blog img {
+    width: 95%;
+  }
+  .blog h4 {
+    max-width: 150px;
+  }
+  .blog h3 {
+    width: 20%;
+    left: -4px;
+  }
+  .blog span {
+    left: -2px;
+  }
+  .blog p {
+    max-width: 240px;
+  }
+
+  .buttons {
+    width: 88%;
+  }
+
+  .container-mogo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mogo p {
+    max-width: none;
+  }
+
+  .blogs-img img {
+    width: 20%;
+  }
+
+  .blogs-text {
+    padding-left: 20px;
+  }
+
+  .blogs-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .blogs h2 {
+    text-align: center;
+  }
+
+  .instagram h2 {
+    text-align: center;
+  }
+
+  .view {
+    padding-left: 176px;
+  }
+
+  .instagram .view-img {
+    padding-left: 175px;
+  }
+}
+@media only screen and (max-width: 769px) and (min-width: 375px) {
+  .button-mini {
+    margin-left: 0;
+  }
+
+  #slider1 {
+    padding-left: 0px;
+  }
+
+  .section-title-block h2 {
+    font-size: 35px;
+  }
+
+  .section-title-block h1 {
+    font-size: 60px;
+    max-width: 350px;
+  }
+
+  #slider1 .viewport {
+    margin-left: -90px;
+  }
+
+  .overview a {
+    margin-top: 30px;
+  }
+
+  .slider-link {
+    margin-top: -100px;
+  }
+
+  .slider-link a {
+    font-size: 10px;
+  }
+
+  .overview span {
+    font-size: 15px;
+  }
+
+  .overview p {
+    font-size: 15px;
+    max-width: 255px;
+    padding-left: 133px;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .wr-story {
+    padding-top: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    width: 300px;
+    height: 197px;
+    margin-left: -94px;
+    margin-top: -28px;
+  }
+
+  .gradient:hover:before {
+    width: 302px;
+    height: 200px;
+    top: -28px;
+    left: -95px;
+  }
+
+  .gradient:hover::after {
+    left: -70px;
+    top: -40px;
+    width: 290px;
+  }
+
+  .number span {
+    font-size: 40px;
+  }
+
+  .number p {
+    font-size: 12px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+  }
+
+  .wr-devices {
+    height: 82vh;
+  }
+
+  .wr-devices {
+    padding-top: 0;
+  }
+
+  .device-phone {
+    padding-left: 0;
+  }
+
+  .device-phone img {
+    height: 302px;
+    margin-top: 106px;
+  }
+
+  .device-phone .phone {
+    height: 210px;
+    right: -100px;
+    top: -274px;
+  }
+
+  .container-colum {
+    padding-left: 0;
+  }
+
+  .question {
+    width: 0;
+  }
+
+  .question h3 {
+    margin-right: 0;
+  }
+
+  .container-service .work {
+    height: 250px;
+  }
+
+  .question img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .container-team2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sing {
+    height: 65px;
+  }
+
+  .wr-team {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  .developer {
+    width: 66%;
+  }
+
+  .block-team:hover::before {
+    width: 67%;
+    margin-left: 58px;
+  }
+
+  .block-team:hover::after {
+    width: 66%;
+    margin-left: 65px;
+  }
+
+  .block-team:hover .icon-team {
+    left: 81px;
+  }
+
+  .wr-some-work {
+    padding-top: 0;
+  }
+
+  .wr-happy-clients {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .clients img {
+    width: 35%;
+  }
+
+  .container-people {
+    display: inline;
+  }
+
+  .container-latest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  input {
+    width: 225px;
+    height: 35px;
+  }
+
+  .contacts-button {
+    width: 115px;
+    height: 40px;
+  }
+
+  .blogs-img img {
+    width: 40%;
+  }
+
+  .view {
+    padding-left: 33px;
+  }
+
+  .instagram .view-img {
+    padding-left: 38px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
