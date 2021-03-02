@@ -26,6 +26,7 @@ $('.slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
+    variableWidth: true,
     prevArrow: backButton,
     nextArrow: nextButton,
     responsive: [
@@ -40,9 +41,6 @@ $('.slider').slick({
         }
     ]      
 });
-
-
-
 
 
 const elements = document.querySelectorAll('.element');
@@ -91,3 +89,33 @@ $(document).ready(function() {
         e.preventDefault();
       });
   });
+
+$(function() {
+
+$("[data-scroll").on("click", function(event) {
+    event.preventDefault();
+
+    
+
+    var $this = $(this),
+        blockId = $(this).data('scroll'),
+        blockOffset = $(blockId).offset().top;
+        
+        
+        $("#nav a").removeClass("active");
+        $this.addClass("active");
+
+        $("html, body").animate({
+            scrollTop: blockOffset 
+        }, 500);
+});
+
+
+$("#nav-toggle").on("click", function(event) {
+    event.preventDefault();
+
+
+    $(this).toggleClass("active");
+    $("#nav").toggleClass("active");
+});
+});

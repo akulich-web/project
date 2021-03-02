@@ -15,20 +15,22 @@
         <header class="header">
             <div class="wrapper">
                 <a href="#" class="logo">MoGo</a>
-                <nav class="nav">
-                    <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
-                    <label for="menu" class="toggleMenu"><i class="fas fa-bars fa-3x"></i></label>
+                <nav class="nav" id="nav">
+        
         <ul class="nav-menu">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>            
-        <button class="button-mini"><i class="fas fa-cart-arrow-down fa-lg"></i></button>
-        <button class="button-mini"><i class="fas fa-search fa-lg"></i>
+            <li><a href="#" data-scroll="#about">About</a></li>
+            <li><a href="#" data-scroll="#service">Service</a></li>
+            <li><a href="#" data-scroll="#work">Work</a></li>
+            <li><a href="#" data-scroll="#blog">Blog</a></li>
+            <li><a href="#" data-scroll="#contact">Contact</a></li>
+            <li><button class="button-mini"><i class="fas fa-cart-arrow-down fa-lg"></i></button></li>
+            <li><button class="button-mini"><i class="fas fa-search fa-lg"></i></li>
         </button> 
+        </ul>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle">
+            <span class="nav-toggle-item"></span>
+        </button>
                 </div> 
         </header>
     <section class="wr-about">
@@ -58,17 +60,17 @@
         </div>
     </div>
 <div class="slider-link">
-    <a href="#" id="link1" class="link">01 intro</a>
-    <a href="#" id="link2" class="link">02 work</a>
-    <a href="#" id="link3" class="link">03 about</a>
-    <a href="#" id="link4" class="link">04 contacts</a>
+    <a href="#" id="link1" class="link">01<span class="slider-text">intro</span></a>
+    <a href="#" id="link2" class="link">02<span class="slider-text">work</span></a>
+    <a href="#" id="link3" class="link">03<span class="slider-text">about</span></a>
+    <a href="#" id="link4" class="link">04<span class="slider-text">contacts</span></a>
 </div>
 
         </div>
         
     </section>
 </section>
-    <section class="wr-story">
+    <section class="wr-story" id="about">
         <div class="wrapper">
             <div class="section-title-block2">
               <h4>What we do</h4>
@@ -97,6 +99,7 @@
         <div class="text-image">super team</div>
     </div>
         </div>
+    </div>
             </section>
 <section class="wr-dates">
     <div class="wrapper">
@@ -114,7 +117,7 @@
     </div>    
         </div>
 </section>
-<section class="wr-work">
+<section class="wr-work" id="service">
     <div class="wrapper">
         <div class="section-title-block2">
             <h4>We work this</h4>
@@ -252,7 +255,7 @@
             </div>   
                 </div>
                     </section> 
-<section class="wr-team">
+<section class="wr-team" id="work">
     <div class="wrapper">
         <div class="section-title-block2">
             <h4>Service</h4>
@@ -320,7 +323,7 @@
         </div>
     </div>
 </section> 
-<section class="wr-some-work">
+<section class="wr-some-work" id="blog">
     <div class="wrapper">
         <div class="section-title-block2">
             <h4>What we do</h4>
@@ -578,7 +581,7 @@
     </div>
 </div>
 </div>
-    <footer class="footer">
+    <footer class="footer" id="contact">
     <span>&copy; 2016 MoGo free PSD template by <a href="#">Laaqiq</a></span>   
     </footer>     
         </div>
