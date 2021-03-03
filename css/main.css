@@ -1304,16 +1304,13 @@ template {
 .wr-slider-img {
   padding-top: 90px;
   padding-bottom: 100px;
-  padding-left: 130px;
-  overflow: hidden;
 }
 
 .slider-container-img {
-  padding-left: 223px;
+  padding-left: 85px;
 }
 
 .slick2 img {
-  padding-right: 40px;
   padding-top: -50px;
   float: left;
 }
@@ -2481,8 +2478,9 @@ input::placeholder {
   }
 
   .question img {
-    width: 56px;
-    height: 41px;
+    width: 47px;
+    height: 34px;
+    margin-top: 5px;
   }
 
   .question {
@@ -2600,8 +2598,12 @@ input::placeholder {
     width: 307px;
   }
 
+  .wr-slider-img {
+    padding-left: 0;
+  }
+
   .slider-container-img {
-    left: -193px;
+    padding-left: 0;
   }
 
   .slider-container-img .arrow-right2 {
@@ -2655,8 +2657,8 @@ input::placeholder {
   }
 
   .clients img {
-    width: 35%;
-    height: 107px;
+    width: 30%;
+    height: 45%;
   }
 
   .container-people {

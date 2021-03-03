@@ -92,9 +92,6 @@ $(document).ready(function() {
 
 $(function() {
 
-
-
-
 $("#nav-toggle").on("click", function(event) {
     event.preventDefault();
 
