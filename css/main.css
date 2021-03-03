@@ -2603,7 +2603,7 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     max-width: 250px;
-    padding-left: 50px;
+    padding-left: 40px;
   }
 
   .wr-sign {
@@ -2745,7 +2745,7 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     max-width: 248px;
-    padding-left: 40px;
+    padding-left: 26px;
   }
 
   .sing {
