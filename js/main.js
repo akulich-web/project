@@ -43,6 +43,7 @@ $('.slider').slick({
 });
 
 
+
 const elements = document.querySelectorAll('.element');
 
 elements.forEach(element =>{
@@ -51,7 +52,7 @@ elements.forEach(element =>{
     var answer = element.lastElementChild;
     var answers = document.querySelectorAll('.element .answer');
 
-    btn.addEventListener('click', ()=>{
+    element.addEventListener('click', ()=>{
         answers.forEach(ans =>{
             let ansIcon = ans.parentElement.querySelector('button i');
             if(answer !== ans){
