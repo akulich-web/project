@@ -69,7 +69,7 @@ elements.forEach(element =>{
 
 
 
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('#slider1').tinycarousel();
     var slider = $("#slider1").data("plugin_tinycarousel");
   
@@ -89,7 +89,7 @@ $(document).ready(function() {
         slider.move(3);
         e.preventDefault();
       });
-  });
+  });*/
 
 $(function() {
 
