@@ -1613,6 +1613,13 @@ p {
     font-size: 15px;
 }
 }
+.gradient-icon {
+    left: 37%;
+}
+.card-item {
+    font-size: 16px;
+    top: 60%;
+}
 
 /*.wr-dates*/
 .number {
@@ -1683,11 +1690,23 @@ p {
 .icon-teams .fas {
     margin-top: 8px;
 }
+.icon-team {
+    padding: 0;
+}
 /*sign*/
 .sing {
-    height: 80px;
+    max-width: 320px;
 }
-
+/*.wr-slider-img*/
+.slick2 p {
+    max-width: 547px;
+}
+.slider2-text img {
+    padding-left: 90px;
+}
+.slider2-text span {
+    left: 230px;
+}
 /*last*/
 .blogs-img img {
     height: 115px;
@@ -1874,7 +1893,7 @@ p {
 .signs {
     display: flex;
     flex-wrap: wrap;
-    max-width: 300px;
+    max-width: 303px;
     padding-left: 40px;
 }
 .wr-sign {
@@ -1988,13 +2007,6 @@ input {
 .container-colum {
     width: 100%;
     margin-left: 1px;
-}
-/*.wr-sign*/
-.signs {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 260px;
-    padding-left: 26px;
 }
 /*wr-slider*/
 .slick1 span {
