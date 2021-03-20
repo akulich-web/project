@@ -541,11 +541,6 @@ template {
   margin-left: 20px;
 }
 
-/*.button-mini img {
-    width: 25px;
-    height: 25px;
-    margin-left: 20px;
-}*/
 .header a:hover {
   color: #fce38a;
   border-bottom: 3px solid #fce38a;
@@ -571,13 +566,14 @@ template {
 }
 .section-title-block h1 {
   position: relative;
-  font-size: 93px;
+  font-size: 98px;
   text-transform: uppercase;
   font-family: "montserrat-bold", sans-serif;
   color: #fff;
   text-align: center;
   margin-top: 5px;
   padding-left: 26px;
+  max-width: 600px;
 }
 .section-title-block h1:after {
   content: "";
@@ -612,58 +608,6 @@ template {
 .btn:hover {
   color: #e34234;
   border: 3px solid #e34234;
-}
-
-#slider1 {
-  padding-left: 350px;
-}
-
-#slider1 .viewport {
-  width: 515px;
-  height: 504px;
-  text-align: center;
-}
-
-#slider1 .overview li {
-  height: 350px;
-  width: 500px;
-  border: medium none;
-}
-
-.overview {
-  list-style-type: none;
-}
-
-.overview p {
-  font-size: 20px;
-  color: #fff;
-  padding-top: 50px;
-  text-align: left;
-}
-.overview span {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-.overview img {
-  width: 40px;
-  height: 40px;
-  margin-top: 30px;
-  margin-left: 225px;
-}
-.overview li {
-  display: flex;
-  flex-direction: column;
-}
-.overview a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 15px;
-}
-
-.address {
-  display: flex;
-  flex-direction: column;
 }
 
 .slider-link {
@@ -1653,7 +1597,7 @@ input::placeholder {
   }
 
   .slider-link {
-    margin-top: -12px;
+    margin-top: 26px;
   }
 
   /*wr-service*/
@@ -1677,19 +1621,13 @@ input::placeholder {
     padding-top: 5vh;
   }
 
-  #slider1 {
-    padding-left: 195px;
-  }
-
   .section-title-block h2 {
-    font-size: 47px;
-  }
-  .section-title-block h1 {
-    font-size: 77px;
+    font-size: 45px;
   }
 
-  .overview a {
-    font-size: 13px;
+  .section-title-block h1 {
+    font-size: 78px;
+    max-width: 460px;
   }
 
   .btn {
@@ -1697,7 +1635,7 @@ input::placeholder {
   }
 
   .slider-link {
-    margin-top: -50px;
+    margin-top: 60px;
   }
 
   .link:hover:before {
@@ -1861,29 +1799,17 @@ input::placeholder {
     padding-top: 0vh;
   }
 
-  #slider1 {
-    padding-left: 105px;
-  }
-
   .section-title-block h2 {
     font-size: 40px;
   }
 
   .section-title-block h1 {
     font-size: 60px;
+    max-width: 400px;
   }
 
   .btn {
     margin-top: 33px;
-  }
-
-  .overview img {
-    width: 20px;
-  }
-
-  .overview span {
-    font-size: 14px;
-    margin-left: -25px;
   }
 
   /*slider-link*/
@@ -2123,45 +2049,19 @@ input::placeholder {
     padding-top: 0vh;
   }
 
-  #slider1 {
-    padding-left: 0;
-  }
-
   .section-title-block h2 {
     font-size: 30px;
   }
 
   .section-title-block h1 {
+    max-width: 260px;
     font-size: 45px;
   }
 
-  .overview a {
-    font-size: 11px;
-  }
-
   .btn {
+    font-size: 12px;
     width: 114px;
     height: 31px;
-  }
-
-  .slider-link {
-    margin-top: -163px;
-  }
-
-  .overview img {
-    width: 19px;
-    margin-top: 0;
-  }
-
-  .overview span {
-    font-size: 15px;
-  }
-
-  .overview p {
-    font-size: 15px;
-    max-width: 290px;
-    padding-top: 40px;
-    padding-left: 115px;
   }
 
   /*wr-store*/
@@ -2306,10 +2206,6 @@ input::placeholder {
     font-size: 20px;
   }
 
-  #slider1 {
-    margin-left: -80px;
-  }
-
   .wr-about {
     padding-top: 0vh;
   }
@@ -2324,12 +2220,9 @@ input::placeholder {
   }
 
   .btn {
+    font-size: 11px;
     width: 108px;
     height: 28px;
-  }
-
-  .overview a {
-    font-size: 10px;
   }
 
   /*wr-story*/
@@ -2507,6 +2400,7 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     max-width: 303px;
+    padding-left: 0;
   }
 
   .wr-sign {
@@ -2586,11 +2480,6 @@ input::placeholder {
   }
 }
 @media (max-width: 320px) {
-  /*wr-intro*/
-  #slider1 {
-    margin-left: -117px;
-  }
-
   /*.wr-about*/
   .container {
     margin-left: 0;
@@ -2674,6 +2563,11 @@ input::placeholder {
 
   .icon-teams .fab {
     margin-top: 8px;
+  }
+
+  /*.wr-sign*/
+  .sing {
+    max-width: 123px;
   }
 
   /*wr-happy-clients*/
