@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "kaushanscript-regular";
+  src: url("../fonts/kaushanscript-regular-webfont.woff2"), url("../fonts/kaushanscript-regular-webfont.woff"), url("../fonts/KaushanScript-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "montserrat-bold";
+  src: url("../fonts/montserrat-bold-webfont.woff2"), url("../fonts/montserrat-bold-webfont.woff"), url("../fonts/montserrat-bold-webfont.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto-lightitalic";
+  src: url("../fonts/roboto-lightitalic-webfont.woff2"), url("../fonts/roboto-lightitalic-webfont.woff"), url("../fonts/Roboto-LightItalic.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("../fonts/montserrat-regular-webfont.woff2"), url("../fonts/montserrat-regular-webfont.woff"), url("../fonts/montserrat-regular-webfont.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../fonts/roboto-regular-webfont.woff2"), url("../fonts/roboto-regular-webfont.woff"), url("../fonts/Roboto-Regular.ttf");
+  font-display: swap;
+}
+body {
+  overflow-x: hidden;
+  font-family: "roboto-regular", sans-serif;
+  font-size: 15px;
+  color: #999;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+  padding-right: 12px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.section-title-block2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.section-title-block2 h4 {
+  font-family: "kaushanscript-regular", sans-serif;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.section-title-block2 h3 {
+  position: relative;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1px;
+  color: #000000;
+}
+.section-title-block2 h3:after {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 3px;
+  background-color: #ff0000;
+  margin-top: 40px;
+  opacity: 0.4;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.section-title-block2 p {
+  font-family: "roboto-regular", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 50px;
+  max-width: 950px;
+}
+
+/*# sourceMappingURL=setting.css.map */
