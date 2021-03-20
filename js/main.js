@@ -69,7 +69,7 @@ elements.forEach(element =>{
 
 
 
-jQuery(document).ready(function() {
+$(document).ready(function() {
     $('#slider1').tinycarousel();
     var slider = $("#slider1").data("plugin_tinycarousel");
   
