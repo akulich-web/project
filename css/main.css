@@ -2459,12 +2459,12 @@ input::placeholder {
   }
 
   .section-title-block h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .section-title-block h1 {
     max-width: 280px;
-    font-size: 50px;
+    font-size: 40px;
     padding: 0;
   }
 
@@ -2564,16 +2564,18 @@ input::placeholder {
     max-width: 123px;
   }
 
-  /*.wr-slider-img*/
+  /*.wr-some-work*/
   .gallery {
-    padding-left: 33px;
+    padding-left: 15px;
   }
 
   .pictures {
+    width: 95%;
     height: 200px;
   }
 
   .pictures-ocean {
+    width: 95%;
     height: 450px;
   }
 
