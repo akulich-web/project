@@ -50,10 +50,11 @@ a {
     background: none;
     cursor: pointer;
     position: absolute;
-    top: 25px;
-    left: 150px;
+    top: 29px;
+    right: 20px;
     z-index: 1;
     transition: .3s linear;
+    outline: none;
 }
 
 .nav-toggle-item {
@@ -105,7 +106,7 @@ a {
     content: '';
     transform-origin: left bottom;
     transform: rotate(-45deg)
-    translateX(-3px);
+    translateX(-4px);
 }
 .buttons-nav i {
     color: #fff;
@@ -134,6 +135,7 @@ a {
     flex-direction: column;
     align-items: center;
 }
+
 .section-title-block {
 h2 {
     color: #fff;
@@ -276,7 +278,6 @@ h1:after {
     height: 40px;
 }
 .gradient-icon {
-    width: 100%;
     opacity: 0;
     position: absolute;
     top: 40%;
@@ -887,7 +888,7 @@ h5 {
     background-position: center;
     padding-top: 90px;
     padding-bottom: 90px;
-    text-align: center;  
+    text-align: center;
 }
 .container-map {
     text-align: center;
@@ -1101,9 +1102,6 @@ h2 {
 
 @media (max-width: 1230px) {
     /*wr-intro*/
-.wr-intro {
-    height: 100vh;
-}
 .wr-about {
     padding-top: 0vh;
 }
@@ -1121,6 +1119,7 @@ h2 {
 }
 .container-colum {
     margin-top: 25px;
+    width: 100%;
 }
 }
 
@@ -1179,9 +1178,11 @@ h2 {
 .service-img {
     width: 60%;
 }
-.element {
-    max-width: 580px;
+.container-colum {
+    margin-left: 2px;
+    width: 60%;
 }
+
 /*wr-slider*/
 .slider-container {
     padding-left: 30px;
@@ -1246,6 +1247,7 @@ input {
 
 
 
+
 @media (max-width: 770px) {
     /*wr-intro*/
 .nav {
@@ -1273,6 +1275,9 @@ input {
 .nav-toggle .active {
     display: block;
 }
+.buttons-nav {
+    margin-right: 60px;
+}
 .button-mini {
     padding-top: 10px;
 }
@@ -1280,13 +1285,13 @@ input {
     padding-top: 10px;
 }
 .wr-about {
-    padding-top: 0vh;
+    padding-top: 7vh;
 }
 .section-title-block h2 {
-    font-size: 40px;
+    font-size: 45px;
 }
 .section-title-block h1 {
-    font-size: 60px;
+    font-size: 70px;
     max-width: 400px;
 }
 .btn {
@@ -1329,11 +1334,22 @@ p {
     font-size: 25px;
 }
 .line {
-    margin: 35px 0px;
+    width: 85%;
+
 }
 /*.wr-devices*/
 .wr-devices {
     padding-top: 40px;
+}
+.device-item {
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 90px;
+}
+.device-item-phone {
+    width: 25%;
+    bottom: -51px;
+    right: 100px;
 }
 
 /*.wr-service*/
@@ -1345,10 +1361,10 @@ p {
     margin-top: 20px;
 }
 .service-img {
-    width: 60%;
+    width: 70%;
 }
 .container-colum {
-    width: 60%;
+    width: 70%;
 }
 
 /*wr-slider*/
@@ -1375,7 +1391,17 @@ p {
 .gallery {
     display: flex;
     flex-direction: column;
+    padding-left: 94px;
 }
+.pictures {
+    width: 86%;
+    height: 400px;
+}
+.pictures-ocean {
+    width: 86%;
+    height: 600px;
+}
+
 /*wr-some-work*/
 .wr-some-work {
     padding-top: 50px;
@@ -1417,8 +1443,8 @@ span {
     flex-wrap: wrap;
 }
 .clients img {
-    width: 25%;
-    height: 130px;
+    width: 17%;
+    height: 100px;
 }
 .clients {
     margin-top: 95px;
@@ -1491,23 +1517,23 @@ h3 {
 
 @media (max-width: 575px) {
     /*wr-intro*/
-.wr-intro {
-    height: 75vh;
-}
 .wr-about {
-    padding-top: 0vh;
+    padding-top: 7vh;
 }
 .section-title-block h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
 .section-title-block h1 {
-    max-width: 260px;
-    font-size: 45px;
+    max-width: 320px;
+    font-size: 55px;
 }
 .btn {
     font-size: 12px;
     width: 114px;
     height: 31px;
+}
+.slider-link {
+    margin-top: 90px;
 }
 
 /*wr-store*/
@@ -1525,12 +1551,9 @@ p {
     font-size: 15px;
 }
 }
-.gradient-icon {
-    left: 37%;
-}
 .card-item {
     font-size: 16px;
-    top: 60%;
+    top: 55%;
 }
 
 /*.wr-dates*/
@@ -1552,9 +1575,7 @@ p {
     flex-wrap: wrap;
     margin-top: 60px;
 }
-.gradient {
-    max-width: 190px;
-}
+
 
 
 /*wr-service*/
@@ -1596,19 +1617,16 @@ p {
     display: none;
 }
 /*.wr-team*/
-.icon-teams .fab {
-    margin-top: 8px;
-}
-.icon-teams .fas {
-    margin-top: 8px;
-}
+
 .icon-team {
-    padding: 0;
+    padding: 8px;
+    margin-bottom: 50px;
 }
 /*sign*/
-.sing {
-    max-width: 320px;
+.signs {
+    padding-left: 30px;
 }
+
 /*.wr-slider-img*/
 .slick2 p {
     max-width: 547px;
@@ -1619,6 +1637,9 @@ p {
 .slider2-text span {
     left: 230px;
 }
+.clients img {
+    width: 20%;
+}
 /*last*/
 .blogs-img img {
     height: 115px;
@@ -1628,56 +1649,25 @@ p {
 
 
 @media (max-width: 430px) {
-.wr-intro {
-    height: 83vh;
-}
-.logo {
-    font-size: 20px;
-}
 .wr-about {
-    padding-top: 0vh;
+    padding-top: 7vh;
 }
-.section-title-block h2 {
-    font-size: 26px;
+.slider-link {
+    margin-top: 115px;
 }
-.section-title-block h1 {
-    font-size: 40px;
-    max-width: 283px;
-}
-.btn {
-    font-size: 11px;
-    width: 108px;
-    height: 28px;
-}
-
-
 /*wr-story*/
 .wr-story {
     padding-bottom: 70px;
 }
-.section-title-block2 {
-h4 {
-    font-size: 14px;
-}
-h3 {
-font-size: 14px;
-}
-p {
+.section-title-block2 p {
     margin-top: 25px;
     font-size: 12px;
 }
-}
-.gradient-icon img {
-    width: 30px;
-}
+
 .section-title-block2 h3:after {
     margin-top: 12px;
-    width: 45px;
 }
-.card-item {
-    font-size: 12px;
-    top: 55%;
-}
+
 /*wr-number*/
 .number {
     display: flex;
@@ -1720,14 +1710,14 @@ p {
 }
 
 /*.wr-devices*/
-.device-phone img {
-    height: 240px;
-    padding-left: 65px;
-    padding-top: 40px;
+.device-item {
+    width: 70%;
+    margin-left: 50px;
 }
 .device-item-phone {
-    bottom: -62px;
-    right: 63px;
+    width: 35%;
+    bottom: -52px;
+    right: 15px;
 }
 
 /*.wr-service*/
@@ -1735,21 +1725,13 @@ p {
     padding-top: 70px;
     padding-bottom: 60px;
 }
-.container-service .work {
-    height: 189px;
+.service-img {
+    width: 90%;
 }
-.question h3 {
-    font-size: 7px;
-    left: 50px;
+.container-colum {
+    width: 90%;
 }
-.question img {
-    width: 47px;
-    height: 34px;
-    margin-top: 5px;
-}
-.element {
-    padding: 0;
-}
+
 
 /*.wr-slider*/
 .wr-slider {
@@ -1787,7 +1769,7 @@ p {
 }
 /*wr-team*/
 .icon-team {
-    padding: 0px;
+    padding: 8px;
 }
 .card-info h3 {
     font-size: 11px;
@@ -1801,11 +1783,15 @@ p {
     display: flex;
     flex-wrap: wrap;
     max-width: 303px;
-    padding-left: 0;
+    padding-left: 40px;
 }
 .wr-sign {
     padding-top: 32px;
     padding-bottom: 30px;
+}
+/*.wr-some-work*/
+.gallery {
+    padding-left: 50px;
 }
 /*.wr-slider-img*/
 .slick2 img {
@@ -1871,28 +1857,40 @@ input {
 }
 
 @media (max-width: 320px) {
+/*.wr-intro*/
+.wr-about {
+    padding-top: 9vh;
+}
+.section-title-block h2 {
+    font-size: 35px;
+}
+.section-title-block h1 {
+    max-width: 280px;
+    font-size: 50px;
+    padding: 0;
+}
+
 /*.wr-about*/
 .container {
     margin-left: 0;
 }
-.gradient {
-    max-width: 161px;
-}
+
 .gradient-icon {
-    left: 38%;
+    left: 41%;
 }
 /*wr-work*/
 .container2 {
     margin-top: 30px;
 }
 /*wr-device*/
-.device-phone img {
-      width: 45%;
-      height: 215px;
-      padding-left: 36px;
+.device-item-phone {
+    bottom: -39px;
 }
 
 /*wr-service*/
+.wr-service {
+    padding-top: 20px;
+}
 .service-img {
     width: 100%;
 }
@@ -1937,11 +1935,35 @@ input {
     margin-left: -18px;
 }
 .icon-teams .fab {
-    margin-top: 8px;
+    margin-top: 4px;
 }
+.icon-teams .fas {
+    margin-top: 4px;
+}
+
 /*.wr-sign*/
+.signs {
+    padding-left: 1px;
+}
 .sing {
     max-width: 123px;
+}
+
+/*.wr-slider-img*/
+.gallery {
+    padding-left: 33px;
+}
+.pictures {
+    height: 200px;
+}
+.pictures-ocean {
+    height: 450px;
+}
+.pictures:hover .text-gallery {
+    bottom: 83%;
+}
+.pictures-ocean:hover .text-gallery {
+    bottom: 67%;
 }
 
 /*wr-happy-clients*/

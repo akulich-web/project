@@ -52,7 +52,6 @@ body {
   color: #000000;
   margin-bottom: 15px;
 }
-
 .section-title-block2 h3 {
   position: relative;
   font-family: "montserrat-bold", sans-serif;
@@ -62,7 +61,6 @@ body {
   margin-top: 1px;
   color: #000000;
 }
-
 .section-title-block2 h3:after {
   content: "";
   display: block;
@@ -75,7 +73,6 @@ body {
   right: 50%;
   transform: translateX(50%);
 }
-
 .section-title-block2 p {
   font-family: "roboto-regular", sans-serif;
   font-size: 15px;
@@ -453,12 +450,10 @@ template {
   display: flex;
   padding-left: 450px;
 }
-
 .nav li {
   margin-left: 47px;
   list-style-type: none;
 }
-
 .nav a {
   color: #fff;
   font-size: 14px;
@@ -475,10 +470,11 @@ template {
   background: none;
   cursor: pointer;
   position: absolute;
-  top: 25px;
-  left: 150px;
+  top: 29px;
+  right: 20px;
   z-index: 1;
   transition: 0.3s linear;
+  outline: none;
 }
 
 .nav-toggle-item {
@@ -531,7 +527,7 @@ template {
 .active .nav-toggle-item::after {
   content: "";
   transform-origin: left bottom;
-  transform: rotate(-45deg) translateX(-3px);
+  transform: rotate(-45deg) translateX(-4px);
 }
 
 .buttons-nav i {
@@ -569,7 +565,6 @@ template {
   font-family: "kaushanscript-regular", sans-serif;
   font-size: 54px;
 }
-
 .section-title-block h1 {
   position: relative;
   font-size: 98px;
@@ -579,9 +574,8 @@ template {
   text-align: center;
   margin-top: 5px;
   padding-left: 26px;
-  max-width: 600px;
+  max-width: 550px;
 }
-
 .section-title-block h1:after {
   content: "";
   display: block;
@@ -724,7 +718,6 @@ template {
 }
 
 .gradient-icon {
-  width: 100%;
   opacity: 0;
   position: absolute;
   top: 40%;
@@ -764,7 +757,6 @@ template {
   text-transform: uppercase;
   color: #fff;
 }
-
 .number span {
   font-family: "montserrat-bold", sans-serif;
   font-size: 72px;
@@ -882,7 +874,6 @@ template {
   width: 70px;
   height: 50px;
 }
-
 .question h3 {
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
@@ -892,14 +883,12 @@ template {
   left: 80px;
   top: 13px;
 }
-
 .question button {
   border: none;
   outline: none;
   background: none;
   cursor: pointer;
 }
-
 .question .fas {
   color: #DCDCDC;
 }
@@ -951,7 +940,6 @@ template {
   float: left;
   margin: 30px;
 }
-
 .slick1 p {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 24px;
@@ -959,7 +947,6 @@ template {
   white-space: pre-line;
   margin-top: 50px;
 }
-
 .slick1 span {
   font-family: "kaushanscript-regular", sans-serif;
   font-size: 24px;
@@ -968,7 +955,6 @@ template {
   left: 80px;
   top: 15px;
 }
-
 .slick1 span::before {
   content: "";
   display: block;
@@ -1043,7 +1029,6 @@ template {
   color: #333;
   text-transform: uppercase;
 }
-
 .card-info h4 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
@@ -1151,14 +1136,12 @@ template {
   width: 40px;
   height: 50px;
 }
-
 .text-gallery h3 {
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
 }
-
 .text-gallery h4 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
@@ -1190,7 +1173,6 @@ template {
   float: left;
   padding-left: 136px;
 }
-
 .slider2-text p {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 24px;
@@ -1198,7 +1180,6 @@ template {
   white-space: pre-line;
   width: 55%;
 }
-
 .slider2-text span {
   font-family: "kaushanscript-regular", sans-serif;
   font-size: 24px;
@@ -1207,7 +1188,6 @@ template {
   left: 80px;
   top: 15px;
 }
-
 .slider2-text span::before {
   content: "";
   display: block;
@@ -1231,11 +1211,9 @@ template {
   top: 40%;
   color: #e5e5e5;
 }
-
 .slider-container-img .arrow-left2 {
   left: 80px;
 }
-
 .slider-container-img .arrow-right2 {
   right: 80px;
 }
@@ -1277,7 +1255,6 @@ template {
   text-transform: uppercase;
   color: #333333;
 }
-
 .clients-text h4 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
@@ -1285,7 +1262,6 @@ template {
   position: relative;
   top: -10px;
 }
-
 .clients-text h4::after {
   content: "";
   display: block;
@@ -1296,7 +1272,6 @@ template {
   position: absolute;
   top: 35px;
 }
-
 .clients-text p {
   max-width: 390px;
 }
@@ -1322,7 +1297,6 @@ template {
   height: 240px;
   object-fit: cover;
 }
-
 .blog h3 {
   width: 15%;
   height: 60px;
@@ -1336,19 +1310,16 @@ template {
   bottom: -10px;
   line-height: 0.7;
 }
-
 .blog span {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
 }
-
 .blog h4 {
   font-family: "montserrat-regular", sans-serif;
   font-size: 14px;
   color: #333;
   text-transform: uppercase;
 }
-
 .blog p {
   max-width: 370px;
 }
@@ -1363,19 +1334,16 @@ template {
 .buttons .fa-eye {
   color: #95e1d3;
 }
-
 .buttons .fa-comment-dots {
   color: #95e1d3;
   margin-left: 15px;
 }
-
 .buttons .btns {
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
 }
-
 .buttons h5 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
@@ -1400,7 +1368,6 @@ template {
   width: 30px;
   height: 30px;
 }
-
 .container-map .map {
   font-family: "montserrat-bold", sans-serif;
   font-size: 24px;
@@ -1409,7 +1376,6 @@ template {
   text-decoration: none;
   position: relative;
 }
-
 .container-map .map::after {
   content: "";
   display: block;
@@ -1446,18 +1412,15 @@ template {
   opacity: 0.3;
   margin-top: 4px;
 }
-
 .mogo p {
   max-width: 460px;
   line-height: 1.5;
 }
-
 .mogo h3 {
   font-weight: lighter;
   margin-top: 30px;
   font-size: 15px;
 }
-
 .mogo span {
   font-family: "montserrat-bold", sans-serif;
   font-size: 20px;
@@ -1465,13 +1428,11 @@ template {
   color: #333;
   padding: 5px;
 }
-
 .mogo .lines {
   width: 100%;
   height: 1px;
   background-color: #DCDCDC;
 }
-
 .mogo h4 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 15px;
@@ -1566,7 +1527,6 @@ input::placeholder {
   text-transform: uppercase;
   line-height: 1.5;
 }
-
 .blogs-text h3 {
   font-family: "roboto-lightitalic", sans-serif;
   font-size: 13px;
@@ -1592,7 +1552,6 @@ input::placeholder {
   font-weight: lighter;
   color: #333;
 }
-
 .blog-instagram .view-img {
   background: none;
   border: none;
@@ -1625,10 +1584,6 @@ input::placeholder {
 
 @media (max-width: 1230px) {
   /*wr-intro*/
-  .wr-intro {
-    height: 100vh;
-  }
-
   .wr-about {
     padding-top: 0vh;
   }
@@ -1650,6 +1605,7 @@ input::placeholder {
 
   .container-colum {
     margin-top: 25px;
+    width: 100%;
   }
 }
 @media (max-width: 990px) {
@@ -1718,8 +1674,9 @@ input::placeholder {
     width: 60%;
   }
 
-  .element {
-    max-width: 580px;
+  .container-colum {
+    margin-left: 2px;
+    width: 60%;
   }
 
   /*wr-slider*/
@@ -1739,7 +1696,6 @@ input::placeholder {
   .text-team h3 {
     font-size: 17px;
   }
-
   .text-team h4 {
     font-size: 17px;
   }
@@ -1829,6 +1785,10 @@ input::placeholder {
     display: block;
   }
 
+  .buttons-nav {
+    margin-right: 60px;
+  }
+
   .button-mini {
     padding-top: 10px;
   }
@@ -1838,15 +1798,15 @@ input::placeholder {
   }
 
   .wr-about {
-    padding-top: 0vh;
+    padding-top: 7vh;
   }
 
   .section-title-block h2 {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .section-title-block h1 {
-    font-size: 60px;
+    font-size: 70px;
     max-width: 400px;
   }
 
@@ -1880,7 +1840,6 @@ input::placeholder {
   .number span {
     font-size: 65px;
   }
-
   .number p {
     text-align: center;
   }
@@ -1896,12 +1855,24 @@ input::placeholder {
   }
 
   .line {
-    margin: 35px 0px;
+    width: 85%;
   }
 
   /*.wr-devices*/
   .wr-devices {
     padding-top: 40px;
+  }
+
+  .device-item {
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 90px;
+  }
+
+  .device-item-phone {
+    width: 25%;
+    bottom: -51px;
+    right: 100px;
   }
 
   /*.wr-service*/
@@ -1915,11 +1886,11 @@ input::placeholder {
   }
 
   .service-img {
-    width: 60%;
+    width: 70%;
   }
 
   .container-colum {
-    width: 60%;
+    width: 70%;
   }
 
   /*wr-slider*/
@@ -1949,6 +1920,17 @@ input::placeholder {
   .gallery {
     display: flex;
     flex-direction: column;
+    padding-left: 94px;
+  }
+
+  .pictures {
+    width: 86%;
+    height: 400px;
+  }
+
+  .pictures-ocean {
+    width: 86%;
+    height: 600px;
   }
 
   /*wr-some-work*/
@@ -1960,13 +1942,11 @@ input::placeholder {
   .slick2 img {
     width: 23%;
   }
-
   .slick2 p {
     font-size: 17px;
     padding-left: 72px;
     max-width: 592px;
   }
-
   .slick2 span {
     font-size: 17px;
   }
@@ -2000,8 +1980,8 @@ input::placeholder {
   }
 
   .clients img {
-    width: 25%;
-    height: 130px;
+    width: 17%;
+    height: 100px;
   }
 
   .clients {
@@ -2054,7 +2034,6 @@ input::placeholder {
     font-size: 16px;
     max-width: 250px;
   }
-
   .blogs-text h3 {
     font-size: 16px;
   }
@@ -2087,27 +2066,27 @@ input::placeholder {
 }
 @media (max-width: 575px) {
   /*wr-intro*/
-  .wr-intro {
-    height: 75vh;
-  }
-
   .wr-about {
-    padding-top: 0vh;
+    padding-top: 7vh;
   }
 
   .section-title-block h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .section-title-block h1 {
-    max-width: 260px;
-    font-size: 45px;
+    max-width: 320px;
+    font-size: 55px;
   }
 
   .btn {
     font-size: 12px;
     width: 114px;
     height: 31px;
+  }
+
+  .slider-link {
+    margin-top: 90px;
   }
 
   /*wr-store*/
@@ -2122,25 +2101,19 @@ input::placeholder {
   .section-title-block2 h3 {
     font-size: 30px;
   }
-
   .section-title-block2 p {
     font-size: 15px;
   }
 
-  .gradient-icon {
-    left: 37%;
-  }
-
   .card-item {
     font-size: 16px;
-    top: 60%;
+    top: 55%;
   }
 
   /*.wr-dates*/
   .number span {
     font-size: 47px;
   }
-
   .number p {
     text-align: center;
     font-size: 12px;
@@ -2155,10 +2128,6 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
-  }
-
-  .gradient {
-    max-width: 190px;
   }
 
   /*wr-service*/
@@ -2210,21 +2179,14 @@ input::placeholder {
   }
 
   /*.wr-team*/
-  .icon-teams .fab {
-    margin-top: 8px;
-  }
-
-  .icon-teams .fas {
-    margin-top: 8px;
-  }
-
   .icon-team {
-    padding: 0;
+    padding: 8px;
+    margin-bottom: 50px;
   }
 
   /*sign*/
-  .sing {
-    max-width: 320px;
+  .signs {
+    padding-left: 30px;
   }
 
   /*.wr-slider-img*/
@@ -2240,37 +2202,22 @@ input::placeholder {
     left: 230px;
   }
 
+  .clients img {
+    width: 20%;
+  }
+
   /*last*/
   .blogs-img img {
     height: 115px;
   }
 }
 @media (max-width: 430px) {
-  .wr-intro {
-    height: 83vh;
-  }
-
-  .logo {
-    font-size: 20px;
-  }
-
   .wr-about {
-    padding-top: 0vh;
+    padding-top: 7vh;
   }
 
-  .section-title-block h2 {
-    font-size: 26px;
-  }
-
-  .section-title-block h1 {
-    font-size: 40px;
-    max-width: 283px;
-  }
-
-  .btn {
-    font-size: 11px;
-    width: 108px;
-    height: 28px;
+  .slider-link {
+    margin-top: 115px;
   }
 
   /*wr-story*/
@@ -2278,31 +2225,13 @@ input::placeholder {
     padding-bottom: 70px;
   }
 
-  .section-title-block2 h4 {
-    font-size: 14px;
-  }
-
-  .section-title-block2 h3 {
-    font-size: 14px;
-  }
-
   .section-title-block2 p {
     margin-top: 25px;
     font-size: 12px;
   }
 
-  .gradient-icon img {
-    width: 30px;
-  }
-
   .section-title-block2 h3:after {
     margin-top: 12px;
-    width: 45px;
-  }
-
-  .card-item {
-    font-size: 12px;
-    top: 55%;
   }
 
   /*wr-number*/
@@ -2356,15 +2285,15 @@ input::placeholder {
   }
 
   /*.wr-devices*/
-  .device-phone img {
-    height: 240px;
-    padding-left: 65px;
-    padding-top: 40px;
+  .device-item {
+    width: 70%;
+    margin-left: 50px;
   }
 
   .device-item-phone {
-    bottom: -62px;
-    right: 63px;
+    width: 35%;
+    bottom: -52px;
+    right: 15px;
   }
 
   /*.wr-service*/
@@ -2373,23 +2302,12 @@ input::placeholder {
     padding-bottom: 60px;
   }
 
-  .container-service .work {
-    height: 189px;
+  .service-img {
+    width: 90%;
   }
 
-  .question h3 {
-    font-size: 7px;
-    left: 50px;
-  }
-
-  .question img {
-    width: 47px;
-    height: 34px;
-    margin-top: 5px;
-  }
-
-  .element {
-    padding: 0;
+  .container-colum {
+    width: 90%;
   }
 
   /*.wr-slider*/
@@ -2434,7 +2352,7 @@ input::placeholder {
 
   /*wr-team*/
   .icon-team {
-    padding: 0px;
+    padding: 8px;
   }
 
   .card-info h3 {
@@ -2450,12 +2368,17 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     max-width: 303px;
-    padding-left: 0;
+    padding-left: 40px;
   }
 
   .wr-sign {
     padding-top: 32px;
     padding-bottom: 30px;
+  }
+
+  /*.wr-some-work*/
+  .gallery {
+    padding-left: 50px;
   }
 
   /*.wr-slider-img*/
@@ -2487,7 +2410,6 @@ input::placeholder {
   .mogo h2 {
     font-size: 38px;
   }
-
   .mogo p {
     font-size: 12px;
   }
@@ -2531,17 +2453,28 @@ input::placeholder {
   }
 }
 @media (max-width: 320px) {
+  /*.wr-intro*/
+  .wr-about {
+    padding-top: 9vh;
+  }
+
+  .section-title-block h2 {
+    font-size: 35px;
+  }
+
+  .section-title-block h1 {
+    max-width: 280px;
+    font-size: 50px;
+    padding: 0;
+  }
+
   /*.wr-about*/
   .container {
     margin-left: 0;
   }
 
-  .gradient {
-    max-width: 161px;
-  }
-
   .gradient-icon {
-    left: 38%;
+    left: 41%;
   }
 
   /*wr-work*/
@@ -2550,13 +2483,15 @@ input::placeholder {
   }
 
   /*wr-device*/
-  .device-phone img {
-    width: 45%;
-    height: 215px;
-    padding-left: 36px;
+  .device-item-phone {
+    bottom: -39px;
   }
 
   /*wr-service*/
+  .wr-service {
+    padding-top: 20px;
+  }
+
   .service-img {
     width: 100%;
   }
@@ -2613,12 +2548,41 @@ input::placeholder {
   }
 
   .icon-teams .fab {
-    margin-top: 8px;
+    margin-top: 4px;
+  }
+
+  .icon-teams .fas {
+    margin-top: 4px;
   }
 
   /*.wr-sign*/
+  .signs {
+    padding-left: 1px;
+  }
+
   .sing {
     max-width: 123px;
+  }
+
+  /*.wr-slider-img*/
+  .gallery {
+    padding-left: 33px;
+  }
+
+  .pictures {
+    height: 200px;
+  }
+
+  .pictures-ocean {
+    height: 450px;
+  }
+
+  .pictures:hover .text-gallery {
+    bottom: 83%;
+  }
+
+  .pictures-ocean:hover .text-gallery {
+    bottom: 67%;
   }
 
   /*wr-happy-clients*/
@@ -2635,6 +2599,5 @@ input::placeholder {
     font-size: 15px;
   }
 }
-/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
