@@ -2225,7 +2225,7 @@ input::placeholder {
   }
 
   .section-title-block {
-    margin-left: -40px;
+    margin-left: -23px;
   }
 
   .slider-link {
@@ -2478,6 +2478,10 @@ input::placeholder {
     max-width: 280px;
     font-size: 40px;
     padding: 0;
+  }
+
+  .slider-link {
+    margin-top: 80px;
   }
 
   /*.wr-about*/
