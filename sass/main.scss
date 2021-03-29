@@ -190,7 +190,7 @@ h1:after {
 .slider-link {
     display: flex;
     justify-content: space-around;
-    margin-top: -15px;
+    margin-top: 60px;
 }
 .slider-link a {
     text-decoration: none;
@@ -217,15 +217,12 @@ h1:after {
     font-weight: bold;
     color: #e34234;
 }
-
-
-
 .link .active {
     color: #e34234;
 }
 .tabs {
     position: relative;
-    height: 600px;
+    height: 530px;
     overflow: hidden;
 }
 .tabs-item{
