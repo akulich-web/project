@@ -646,6 +646,47 @@ template {
   color: #e34234;
 }
 
+.link .active {
+  color: #e34234;
+}
+
+.tabs {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+
+.tabs-item {
+  display: none;
+  position: absolute;
+  left: 300px;
+  top: 0;
+}
+
+.tabs-item h5 {
+  color: #fff;
+  font-size: 20px;
+}
+.tabs-item p {
+  color: #fff;
+  max-width: 500px;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 65px;
+  margin-top: 100px;
+}
+.tabs-item h4 {
+  color: #fff;
+  font-size: 30px;
+}
+.tabs-item a {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
 /*wr-story*/
 .wr-story {
   padding-top: 90px;
@@ -1593,7 +1634,7 @@ input::placeholder {
   }
 
   .slider-link {
-    margin-top: 26px;
+    margin-top: -51px;
   }
 
   /*wr-service*/
@@ -1618,6 +1659,14 @@ input::placeholder {
     padding-top: 5vh;
   }
 
+  .tabs-item {
+    left: 240px;
+  }
+
+  .tabs-item p {
+    margin-left: -8px;
+  }
+
   .section-title-block h2 {
     font-size: 45px;
   }
@@ -1632,7 +1681,7 @@ input::placeholder {
   }
 
   .slider-link {
-    margin-top: 60px;
+    margin-top: -90px;
   }
 
   .link:hover:before {
@@ -1799,6 +1848,14 @@ input::placeholder {
 
   .wr-about {
     padding-top: 7vh;
+  }
+
+  .tabs-item {
+    left: 150px;
+  }
+
+  .tabs-item p {
+    margin-left: -35px;
   }
 
   .section-title-block h2 {
@@ -2070,6 +2127,15 @@ input::placeholder {
     padding-top: 7vh;
   }
 
+  .tabs-item {
+    left: 100px;
+  }
+
+  .tabs-item a {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
   .section-title-block h2 {
     font-size: 40px;
   }
@@ -2079,14 +2145,12 @@ input::placeholder {
     font-size: 55px;
   }
 
-  .btn {
-    font-size: 12px;
-    width: 114px;
-    height: 31px;
+  .tabs-item p {
+    margin-left: -80px;
   }
 
   .slider-link {
-    margin-top: 90px;
+    margin-top: -125px;
   }
 
   /*wr-store*/
@@ -2213,23 +2277,29 @@ input::placeholder {
 }
 @media (max-width: 430px) {
   .wr-about {
-    padding-top: 7vh;
+    padding-top: 10vh;
+  }
+
+  .tabs-item {
+    left: 0px;
+  }
+
+  .tabs-item p {
+    margin-left: 13px;
+    font-size: 12px;
   }
 
   .section-title-block h2 {
-    font-size: 30px;
+    font-size: 34px;
   }
 
   .section-title-block h1 {
-    font-size: 45px;
-  }
-
-  .section-title-block {
-    margin-left: -23px;
+    max-width: 350px;
+    font-size: 55px;
   }
 
   .slider-link {
-    margin-top: 115px;
+    margin-top: -140px;
   }
 
   /*wr-story*/
@@ -2480,8 +2550,16 @@ input::placeholder {
     padding: 0;
   }
 
+  .btn {
+    height: 30px;
+  }
+
+  .tabs-item p {
+    margin-top: 10px;
+  }
+
   .slider-link {
-    margin-top: 80px;
+    margin-top: -200px;
   }
 
   /*.wr-about*/

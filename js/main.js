@@ -82,3 +82,12 @@ $("#nav-toggle").on("click", function(event) {
 });
 
 
+$(document).ready(function() {
+    $('.tabs-item:first-child').show();
+    $('.link').click(function(event) {
+        event.preventDefault();
+        $(this).toggleClass('active').siblings().removeClass('active');
+        var id = $(this).attr('href');
+        $(id).fadeIn().siblings().fadeOut();
+    });
+  });
