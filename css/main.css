@@ -614,6 +614,7 @@ template {
 .slider-link {
   display: flex;
   justify-content: space-around;
+  margin-top: -15px;
 }
 
 .slider-link a {
