@@ -1633,10 +1633,6 @@ input::placeholder {
     margin-top: 0;
   }
 
-  .slider-link {
-    margin-top: 15px;
-  }
-
   /*wr-service*/
   .container-service {
     display: flex;
