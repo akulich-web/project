@@ -118,11 +118,15 @@ a {
     cursor: pointer;
     margin-left: 20px;
 }
-.header a:hover {
+.nav-link:hover {
     color: #fce38a;
     border-bottom: 3px solid #fce38a;
     padding-bottom: 5px;
     text-decoration: none;
+}
+
+.nav-link.active {
+    color: #fce38a;
 }
 
 
@@ -206,7 +210,8 @@ h1:after {
     padding-top: 20px;
     position: relative;
 }
-.link:hover:before {
+
+/*.link:hover:before {
     content: '';
     position: absolute;
     bottom: 100%;
@@ -216,9 +221,17 @@ h1:after {
 .link:hover {
     font-weight: bold;
     color: #e34234;
-}
-.link .active {
-    color: #e34234;
+}*/
+.link.active::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #e34234;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
 }
 .tabs {
     position: relative;
@@ -1728,7 +1741,7 @@ p {
     font-size: 55px;
 }
 .slider-link {
-    margin-top: -140px;
+    margin-top: -80px;
 }
 /*wr-story*/
 .wr-story {
@@ -1934,7 +1947,7 @@ input {
 @media (max-width: 320px) {
 /*.wr-intro*/
 .wr-about {
-    padding-top: 9vh;
+    padding-top: 5vh;
 }
 .section-title-block h2 {
     font-size: 30px;
@@ -1951,7 +1964,7 @@ input {
     margin-top: 10px;
 }
 .slider-link {
-    margin-top: -200px;
+    margin-top: -113px;
 }
 
 /*.wr-about*/
