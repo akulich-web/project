@@ -127,6 +127,7 @@ a {
 
 .nav-link.active {
     color: #fce38a;
+    border-bottom: 3px solid #fce38a;
 }
 
 
@@ -195,7 +196,7 @@ h1:after {
     display: flex;
     justify-content: space-around;
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     width: 65%;
     
 }
